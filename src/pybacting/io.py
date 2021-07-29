@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+
+"""Wrappers around I/O functions in bacting."""
+
 from .api import cdk
 
 

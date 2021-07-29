@@ -1,8 +1,17 @@
+# -*- coding: utf-8 -*-
+
+"""Java components via :mod:`scyjava`"""
+
 from scyjava import config, jimport
 
-config.add_endpoints('io.github.egonw.bacting:managers-cdk:0.0.20')
-workspace_root = '.'
-CDK = jimport('net.bioclipse.managers.CDKManager')
-cdk = CDK(workspace_root)
+__all__ = [
+    'cdk',
+]
 
+ENDPOINT = 'io.github.egonw.bacting:managers-cdk:0.0.20'
+CDKMANAGER_PATH = 'net.bioclipse.managers.CDKManager'
+WORKSPACE_ROOT = '.'
 
+config.add_endpoints(ENDPOINT)
+cdk_class = jimport(CDKMANAGER_PATH)
+cdk = cdk_class(WORKSPACE_ROOT)
