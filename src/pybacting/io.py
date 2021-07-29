@@ -10,5 +10,5 @@ def from_smiles(smiles: str):
     return cdk.fromSMILES(smiles)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(from_smiles("COC"))
