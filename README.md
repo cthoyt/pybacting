@@ -1,5 +1,10 @@
 # pybacting
 
+[![Tests](https://github.com/cthoyt/pybacting/actions/workflows/tests.yml/badge.svg)](https://github.com/cthoyt/pybacting/actions/workflows/tests.yml)
+![PyPI - License](https://img.shields.io/pypi/l/pybacting)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![DOI](https://zenodo.org/badge/390711946.svg)](https://zenodo.org/badge/latestdoi/390711946)
+
 Python wrapper around [bacting](https://github.com/egonw/bacting).
 
 ## Usage
@@ -26,13 +31,17 @@ print(pybacting.from_smiles("COC"))
 Before installing, you'll need to make sure Maven (`mvn`) is available on your
 path. If you're on mac, use `brew install maven`.
 
-Install from GitHub:
+```shell
+$ pip install pybacting
+```
+
+Install the latest code from GitHub:
 
 ```shell
 $ pip install git+https://github.com/cthoyt/pybacting
 ```
 
-Install in development mode:
+Download and install from source in development mode:
 
 ```shell
 $ git clone https://github.com/cthoyt/pybacting
