@@ -15,7 +15,7 @@ def from_smiles(smiles: str) -> Molecule:
 
 
 def from_iupac_name(name: str) -> Molecule:
-    """Creates a molecule from an IUPAC name."""
+    """Create a molecule from an IUPAC name."""
     return opsin.parseIUPACName(name)
 
 
