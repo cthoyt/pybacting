@@ -2,12 +2,18 @@
 
 """Wrappers around I/O functions in bacting."""
 
-from .api import cdk
+from .cdk import cdk
+from .opsin import opsin
 
 
 def from_smiles(smiles: str):
     """Load a molecule from SMILES."""
     return cdk.fromSMILES(smiles)
+
+
+def from_IUPAC_name(name: str):
+    """Creates a molecule from an IUPAC name."""
+    return opsin.parseIUPACName(name)
 
 
 if __name__ == "__main__":
