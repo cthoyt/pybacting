@@ -8,10 +8,12 @@ __all__ = [
     "cdk",
 ]
 
-ENDPOINT = "io.github.egonw.bacting:managers-cdk:0.0.20"
-CDKMANAGER_PATH = "net.bioclipse.managers.CDKManager"
 WORKSPACE_ROOT = "."
 
+ENDPOINT = "io.github.egonw.bacting:managers-cdk:0.0.20"
+MANAGER_PATH = "net.bioclipse.managers.CDKManager"
 config.add_endpoints(ENDPOINT)
-cdk_class = jimport(CDKMANAGER_PATH)
+cdk_class = jimport(MANAGER_PATH)
 cdk = cdk_class(WORKSPACE_ROOT)
+
+
