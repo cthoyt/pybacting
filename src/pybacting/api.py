@@ -44,6 +44,7 @@ start_jvm()
 #  needs some serious re-working in scyjava. Potential solution is to sort the
 #  dependencies, create a hash to use as the filename, then store the list itself
 #  inside the file/directory based on that hash.
+#  See: https://github.com/scijava/scyjava/issues/30
 
 cdk_class = jimport("net.bioclipse.managers.CDKManager")
 cdk = cdk_class(WORKSPACE)
