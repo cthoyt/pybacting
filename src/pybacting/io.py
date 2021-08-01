@@ -29,5 +29,10 @@ def get_inchi_key(mol: Molecule) -> str:
     return inchi.generate(mol).getKey()
 
 
+def get_svg(mol: Molecule) -> str:
+    """Get an SVG depictiong for a molecule."""
+    return cdk.asSVG(mol)
+
+
 if __name__ == "__main__":
     print(from_smiles("COC"))

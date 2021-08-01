@@ -15,8 +15,8 @@ WORKSPACE = "."
 
 config.add_endpoints(
     # "io.github.egonw.bacting:managers-semweb:0.0.20",
-    "io.github.egonw.bacting:managers-inchi:0.0.20",
-    "io.github.egonw.bacting:managers-pubchem:0.0.20",
+    "io.github.egonw.bacting:managers-inchi:0.0.21",
+    "io.github.egonw.bacting:managers-pubchem:0.0.21",
     # "io.github.egonw.bacting:managers-xml:0.0.20",
     # "io.github.egonw.bacting:managers-rdf:0.0.20",
     # "io.github.egonw.bacting:managers-bioinfo:0.0.20",
@@ -24,8 +24,8 @@ config.add_endpoints(
     # "io.github.egonw.bacting:managers-cheminfo:0.0.20",
     # "io.github.egonw.bacting:managers-ui:0.0.20",
     # "io.github.egonw.bacting:managers-excel:0.0.20",
-    "io.github.egonw.bacting:managers-opsin:0.0.20",
-    "io.github.egonw.bacting:managers-cdk:0.0.20",
+    "io.github.egonw.bacting:managers-opsin:0.0.21",
+    "io.github.egonw.bacting:managers-cdk:0.0.21",
     # "io.github.egonw.bacting:managers-biojava:0.0.20",
     # "io.github.egonw.bacting:managers-bridgedb:0.0.20",
     # "io.github.egonw.bacting:bacting-core:0.0.20",
