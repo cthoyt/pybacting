@@ -12,7 +12,7 @@ __all__ = [
 ]
 
 WORKSPACE = "."
-VERSION = "0.0.20"
+VERSION = "0.0.21"
 
 config.add_endpoints(
     # f"io.github.egonw.bacting:managers-semweb:{VERSION}",
