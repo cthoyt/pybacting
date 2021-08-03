@@ -15,21 +15,21 @@ WORKSPACE = "."
 VERSION = "0.0.21"
 
 config.add_endpoints(
-    # f"io.github.egonw.bacting:managers-semweb:{VERSION}",
+    f"io.github.egonw.bacting:managers-semweb:{VERSION}",
     f"io.github.egonw.bacting:managers-inchi:{VERSION}",
     f"io.github.egonw.bacting:managers-pubchem:{VERSION}",
-    # f"io.github.egonw.bacting:managers-xml:{VERSION}",
-    # f"io.github.egonw.bacting:managers-rdf:{VERSION}",
-    # f"io.github.egonw.bacting:managers-bioinfo:{VERSION}",
-    # f"io.github.egonw.bacting:managers-oscar:{VERSION}",
-    # f"io.github.egonw.bacting:managers-cheminfo:{VERSION}",
-    # f"io.github.egonw.bacting:managers-ui:{VERSION}",
-    # f"io.github.egonw.bacting:managers-excel:{VERSION}",
+    f"io.github.egonw.bacting:managers-xml:{VERSION}",
+    f"io.github.egonw.bacting:managers-rdf:{VERSION}",
+    f"io.github.egonw.bacting:managers-bioinfo:{VERSION}",
+    f"io.github.egonw.bacting:managers-oscar:{VERSION}",
+    f"io.github.egonw.bacting:managers-cheminfo:{VERSION}",
+    f"io.github.egonw.bacting:managers-ui:{VERSION}",
+    f"io.github.egonw.bacting:managers-excel:{VERSION}",
     f"io.github.egonw.bacting:managers-opsin:{VERSION}",
     f"io.github.egonw.bacting:managers-cdk:{VERSION}",
-    # f"io.github.egonw.bacting:managers-biojava:{VERSION}",
-    # f"io.github.egonw.bacting:managers-bridgedb:{VERSION}",
-    # f"io.github.egonw.bacting:bacting-core:{VERSION}",
+    f"io.github.egonw.bacting:managers-biojava:{VERSION}",
+    f"io.github.egonw.bacting:managers-bridgedb:{VERSION}",
+    f"io.github.egonw.bacting:bacting-core:{VERSION}",
 )
 
 # Connecting to the JVM is usually done implicitly, but since spreading
