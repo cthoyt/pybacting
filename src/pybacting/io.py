@@ -5,6 +5,7 @@
 from typing import Any
 
 from scyjava import to_python
+
 from .api import cdk, inchi, opsin
 
 Molecule = Any
