@@ -4,6 +4,7 @@
 [![PyPI](https://img.shields.io/pypi/v/pybacting)](https://pypi.org/project/pybacting/)
 ![PyPI - License](https://img.shields.io/pypi/l/pybacting)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pybacting)
+[![Documentation Status](https://readthedocs.org/projects/pybacting/badge/?version=latest)](https://pybacting.readthedocs.io/en/latest/?badge=latest)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![DOI](https://zenodo.org/badge/390711946.svg)](https://zenodo.org/badge/latestdoi/390711946)
 
