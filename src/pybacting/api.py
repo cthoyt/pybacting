@@ -14,6 +14,9 @@ __all__ = [
 WORKSPACE = "."
 VERSION = "0.0.21"
 
+# The ones marked with "no" can't be loaded because they are POM-only
+# artifacts. See the excellent explanation given by @ctrueden why at:
+# https://github.com/scijava/scyjava/issues/30#issuecomment-892061823
 config.add_endpoints(
     # f"io.github.egonw.bacting:managers-semweb:{VERSION}", # no
     f"io.github.egonw.bacting:managers-inchi:{VERSION}",
