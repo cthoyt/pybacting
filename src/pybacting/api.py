@@ -61,3 +61,21 @@ opsin = opsin_class(WORKSPACE)
 
 pubchem_cls = jimport("net.bioclipse.managers.PubChemManager")
 pubchem = pubchem_cls(WORKSPACE)
+
+xml_cls = jimport("net.bioclipse.managers.XMLManager")
+xml = xml_cls(WORKSPACE)
+
+rdf_cls = jimport("net.bioclipse.managers.RDFManager")
+rdf = rdf_cls(WORKSPACE)
+
+oscar_cls = jimport("net.bioclipse.managers.OscarManager")
+oscar = oscar_cls(WORKSPACE)
+
+bridgedb_cls = jimport("net.bioclipse.managers.BridgedbManager")
+bridgedb = bridgedb_cls(WORKSPACE)
+
+excel_cls = jimport("net.bioclipse.managers.ExcelManager")
+excel = excel_cls(WORKSPACE)
+
+biojava_cls = jimport("net.bioclipse.managers.BiojavaManager")
+biojava = biojava_cls(WORKSPACE)
