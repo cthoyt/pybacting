@@ -9,6 +9,12 @@ __all__ = [
     "opsin",
     "inchi",
     "pubchem",
+    "xml",
+    "rdf",
+    "oscar",
+    "bridgedb",
+    "excel",
+    "biojava",
 ]
 
 WORKSPACE = "."
@@ -52,30 +58,40 @@ start_jvm()
 
 cdk_class = jimport("net.bioclipse.managers.CDKManager")
 cdk = cdk_class(WORKSPACE)
+"""The CDK manager from Bacting."""
 
 inchi_cls = jimport("net.bioclipse.managers.InChIManager")
 inchi = inchi_cls(WORKSPACE)
+"""The InChI manager from Bacting."""
 
 opsin_class = jimport("net.bioclipse.managers.OpsinManager")
 opsin = opsin_class(WORKSPACE)
+"""The Opsin manager from Bacting."""
 
 pubchem_cls = jimport("net.bioclipse.managers.PubChemManager")
 pubchem = pubchem_cls(WORKSPACE)
+"""The PubChem manager from Bacting."""
 
 xml_cls = jimport("net.bioclipse.managers.XMLManager")
 xml = xml_cls(WORKSPACE)
+"""The XML manager from Bacting."""
 
 rdf_cls = jimport("net.bioclipse.managers.RDFManager")
 rdf = rdf_cls(WORKSPACE)
+"""The RDF manager from Bacting."""
 
 oscar_cls = jimport("net.bioclipse.managers.OscarManager")
 oscar = oscar_cls(WORKSPACE)
+"""The Oscar manager from Bacting."""
 
 bridgedb_cls = jimport("net.bioclipse.managers.BridgedbManager")
 bridgedb = bridgedb_cls(WORKSPACE)
+"""The BridgeDB manager from Bacting."""
 
 excel_cls = jimport("net.bioclipse.managers.ExcelManager")
 excel = excel_cls(WORKSPACE)
+"""The Excel manager from Bacting."""
 
 biojava_cls = jimport("net.bioclipse.managers.BiojavaManager")
 biojava = biojava_cls(WORKSPACE)
+"""The BioJava manager from Bacting."""
