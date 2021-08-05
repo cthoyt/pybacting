@@ -14,22 +14,25 @@ __all__ = [
 WORKSPACE = "."
 VERSION = "0.0.21"
 
+# The ones marked with "no" can't be loaded because they are POM-only
+# artifacts. See the excellent explanation given by @ctrueden why at:
+# https://github.com/scijava/scyjava/issues/30#issuecomment-892061823
 config.add_endpoints(
-    # f"io.github.egonw.bacting:managers-semweb:{VERSION}",
+    # f"io.github.egonw.bacting:managers-semweb:{VERSION}", # no
     f"io.github.egonw.bacting:managers-inchi:{VERSION}",
     f"io.github.egonw.bacting:managers-pubchem:{VERSION}",
-    # f"io.github.egonw.bacting:managers-xml:{VERSION}",
-    # f"io.github.egonw.bacting:managers-rdf:{VERSION}",
-    # f"io.github.egonw.bacting:managers-bioinfo:{VERSION}",
-    # f"io.github.egonw.bacting:managers-oscar:{VERSION}",
-    # f"io.github.egonw.bacting:managers-cheminfo:{VERSION}",
-    # f"io.github.egonw.bacting:managers-ui:{VERSION}",
-    # f"io.github.egonw.bacting:managers-excel:{VERSION}",
+    f"io.github.egonw.bacting:managers-xml:{VERSION}",
+    f"io.github.egonw.bacting:managers-rdf:{VERSION}",
+    # f"io.github.egonw.bacting:managers-bioinfo:{VERSION}", # no
+    f"io.github.egonw.bacting:managers-oscar:{VERSION}",
+    # f"io.github.egonw.bacting:managers-cheminfo:{VERSION}",# no
+    f"io.github.egonw.bacting:managers-ui:{VERSION}",
+    f"io.github.egonw.bacting:managers-excel:{VERSION}",
     f"io.github.egonw.bacting:managers-opsin:{VERSION}",
     f"io.github.egonw.bacting:managers-cdk:{VERSION}",
-    # f"io.github.egonw.bacting:managers-biojava:{VERSION}",
-    # f"io.github.egonw.bacting:managers-bridgedb:{VERSION}",
-    # f"io.github.egonw.bacting:bacting-core:{VERSION}",
+    f"io.github.egonw.bacting:managers-biojava:{VERSION}",
+    f"io.github.egonw.bacting:managers-bridgedb:{VERSION}",
+    f"io.github.egonw.bacting:bacting-core:{VERSION}",
 )
 
 # Connecting to the JVM is usually done implicitly, but since spreading
@@ -58,3 +61,21 @@ opsin = opsin_class(WORKSPACE)
 
 pubchem_cls = jimport("net.bioclipse.managers.PubChemManager")
 pubchem = pubchem_cls(WORKSPACE)
+
+xml_cls = jimport("net.bioclipse.managers.XMLManager")
+xml = xml_cls(WORKSPACE)
+
+rdf_cls = jimport("net.bioclipse.managers.RDFManager")
+rdf = rdf_cls(WORKSPACE)
+
+oscar_cls = jimport("net.bioclipse.managers.OscarManager")
+oscar = oscar_cls(WORKSPACE)
+
+bridgedb_cls = jimport("net.bioclipse.managers.BridgedbManager")
+bridgedb = bridgedb_cls(WORKSPACE)
+
+excel_cls = jimport("net.bioclipse.managers.ExcelManager")
+excel = excel_cls(WORKSPACE)
+
+biojava_cls = jimport("net.bioclipse.managers.BiojavaManager")
+biojava = biojava_cls(WORKSPACE)
