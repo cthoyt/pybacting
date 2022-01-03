@@ -23,12 +23,11 @@ class TestImport(unittest.TestCase):
         mol = pybacting.from_iupac_name("benzene")
         self.assertIsNotNone(mol)
 
-    # FIXME issue with loading JNI InChI native code.
-    # def test_inchi(self):
-    #     """Test getting InChI."""
-    #     mol = pybacting.from_iupac_name("methane")
-    #     self.assertEqual("InChI=1S/CH4/h1H4", pybacting.get_inchi(mol))
-    #     self.assertEqual("VNWKTOKETHGBQD-UHFFFAOYSA-N", pybacting.get_inchi_key(mol))
+    def test_inchi(self):
+        """Test getting InChI."""
+        mol = pybacting.from_iupac_name("methane")
+        self.assertEqual("InChI=1S/CH4/h1H4", pybacting.get_inchi(mol))
+        self.assertEqual("VNWKTOKETHGBQD-UHFFFAOYSA-N", pybacting.get_inchi_key(mol))
 
     def test_qudt_manager_name(self):
         """Test getting the qudt manager name.
