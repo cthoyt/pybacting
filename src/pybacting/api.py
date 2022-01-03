@@ -5,17 +5,17 @@
 from scyjava import config, jimport, start_jvm
 
 __all__ = [
-    "cdk",
-    "opsin",
-    "inchi",
-    "pubchem",
-    "xml",
-    "rdf",
-    "oscar",
-    "bridgedb",
-    "excel",
     "biojava",
+    "bridgedb",
+    "cdk",
+    "excel",
+    "inchi",
+    "opsin",
+    "oscar",
+    "pubchem",
     "qudt",
+    "rdf",
+    "xml",
 ]
 
 WORKSPACE = "."
