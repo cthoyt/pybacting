@@ -15,10 +15,11 @@ __all__ = [
     "bridgedb",
     "excel",
     "biojava",
+    "qudt",
 ]
 
 WORKSPACE = "."
-VERSION = "0.0.27"
+VERSION = "0.0.30"
 
 # The ones marked with "no" can't be loaded because they are POM-only
 # artifacts. See the excellent explanation given by @ctrueden why at:
@@ -96,3 +97,7 @@ excel = excel_cls(WORKSPACE)
 biojava_cls = jimport("net.bioclipse.managers.BiojavaManager")
 biojava = biojava_cls(WORKSPACE)
 """The BioJava manager from Bacting."""
+
+qudt_cls = jimport("net.bioclipse.managers.QUDTManager")
+qudt = qudt_cls(WORKSPACE)
+"""The quantity conversion manager from Bacting."""
