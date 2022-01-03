@@ -4,6 +4,8 @@
 
 import unittest
 
+from scyjava import to_python
+
 import pybacting
 from pybacting import qudt
 
@@ -33,4 +35,4 @@ class TestImport(unittest.TestCase):
 
         .. seealso:: https://egonw.github.io/bacting-api/net/bioclipse/managers/QUDTManager.html
         """
-        self.assertIsInstance(qudt.getManagerName(), str)
+        self.assertIsInstance(to_python(qudt.getManagerName()), str)
