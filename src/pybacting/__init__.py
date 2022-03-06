@@ -15,4 +15,10 @@ from .api import (  # noqa:F401
     rdf,
     xml,
 )
-from .io import from_iupac_name, from_smiles, get_inchi, get_inchi_key, get_svg  # noqa:F401
+from .io import (  # noqa:F401
+    from_iupac_name,
+    from_smiles,
+    get_inchi,
+    get_inchi_key,
+    get_svg,
+)
