@@ -8,11 +8,11 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![DOI](https://zenodo.org/badge/390711946.svg)](https://zenodo.org/badge/latestdoi/390711946)
 
-Python wrapper around [bacting](https://github.com/egonw/bacting).
+Python wrapper around [Bacting](https://github.com/egonw/bacting).
 
 ## Usage
 
-Based on the example from the bacting page, you can do:
+Based on the example from the Bacting page, you can do:
 
 ```python
 from pybacting import cdk
@@ -51,4 +51,3 @@ $ git clone https://github.com/cthoyt/pybacting
 $ cd pybacting
 $ pip install --editable .
 ```
-
