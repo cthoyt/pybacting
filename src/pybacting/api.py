@@ -19,7 +19,7 @@ __all__ = [
 ]
 
 WORKSPACE = "."
-VERSION = "0.0.32"
+VERSION = "0.0.33"
 
 # The ones marked with "no" can't be loaded because they are POM-only
 # artifacts. See the excellent explanation given by @ctrueden why at:
