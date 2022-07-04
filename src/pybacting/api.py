@@ -19,7 +19,7 @@ __all__ = [
 ]
 
 WORKSPACE = "."
-VERSION = "0.0.38"
+VERSION = "0.0.39"
 
 # The ones marked with "no" can't be loaded because they are POM-only
 # artifacts. See the excellent explanation given by @ctrueden why at:
@@ -40,6 +40,9 @@ endpoints = (
     f"io.github.egonw.bacting:managers-biojava:{VERSION}",
     f"io.github.egonw.bacting:managers-bridgedb:{VERSION}",
     f"io.github.egonw.bacting:bacting-core:{VERSION}",
+    f"io.github.egonw.bacting:net.bioclipse.managers.pubmed:{VERSION}",
+    f"io.github.egonw.bacting:net.bioclipse.managers.doi:{VERSION}",
+    f"io.github.egonw.bacting:net.bioclipse.managers.duckduckgo:{VERSION}"
 )
 config.endpoints.extend(endpoints)
 
