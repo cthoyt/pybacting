@@ -8,11 +8,14 @@ __all__ = [
     "biojava",
     "bridgedb",
     "cdk",
+    "doi",
+    "duckduckgo",
     "excel",
     "inchi",
     "opsin",
     "oscar",
     "pubchem",
+    "pubmed",
     "qudt",
     "rdf",
     "xml",
@@ -104,3 +107,15 @@ biojava = biojava_cls(WORKSPACE)
 qudt_cls = jimport("net.bioclipse.managers.QUDTManager")
 qudt = qudt_cls(WORKSPACE)
 """The quantity conversion manager from Bacting."""
+
+duckduckgo_cls = jimport("net.bioclipse.managers.DuckDuckGoManager")
+duckduckgo = duckduckgo_cls(WORKSPACE)
+"""The DuckDuckGo manager from Bacting."""
+
+doi_cls = jimport("net.bioclipse.managers.DOIManager")
+doi = doi_cls(WORKSPACE)
+"""The Digital Object Identifier manager from Bacting."""
+
+pubmed_cls = jimport("net.bioclipse.managers.PubmedManager")
+pubmed = pubmed_cls(WORKSPACE)
+"""The PubMed manager from Bacting."""
