@@ -45,7 +45,7 @@ endpoints = (
     f"io.github.egonw.bacting:bacting-core:{VERSION}",
     f"io.github.egonw.bacting:net.bioclipse.managers.pubmed:{VERSION}",
     f"io.github.egonw.bacting:net.bioclipse.managers.doi:{VERSION}",
-    f"io.github.egonw.bacting:net.bioclipse.managers.duckduckgo:{VERSION}"
+    f"io.github.egonw.bacting:net.bioclipse.managers.duckduckgo:{VERSION}",
 )
 config.endpoints.extend(endpoints)
 
