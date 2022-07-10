@@ -30,6 +30,7 @@ VERSION = "0.0.42"
 endpoints = (
     "org.apache.logging.log4j:log4j-api:2.18.0",
     "org.apache.logging.log4j:log4j-core:2.18.0",
+    "commons-io:commons-io:2.11.0",
     # f"io.github.egonw.bacting:managers-semweb:{VERSION}", # no
     f"io.github.egonw.bacting:managers-inchi:{VERSION}",
     f"io.github.egonw.bacting:managers-pubchem:{VERSION}",
