@@ -19,13 +19,15 @@ __all__ = [
 ]
 
 WORKSPACE = "."
-VERSION = "0.0.44"
+VERSION = "0.1.2"
 
 # The ones marked with "no" can't be loaded because they are POM-only
 # artifacts. See the excellent explanation given by @ctrueden why at:
 # https://github.com/scijava/scyjava/issues/30#issuecomment-892061823
 endpoints = (
     # f"io.github.egonw.bacting:managers-semweb:{VERSION}", # no
+    f"io.github.egonw.bacting:bacting-core:{VERSION}",
+    f"io.github.egonw.bacting:managers-cdk:{VERSION}",
     f"io.github.egonw.bacting:managers-inchi:{VERSION}",
     f"io.github.egonw.bacting:managers-pubchem:{VERSION}",
     f"io.github.egonw.bacting:managers-xml:{VERSION}",
@@ -36,10 +38,8 @@ endpoints = (
     f"io.github.egonw.bacting:managers-ui:{VERSION}",
     f"io.github.egonw.bacting:managers-excel:{VERSION}",
     f"io.github.egonw.bacting:managers-opsin:{VERSION}",
-    f"io.github.egonw.bacting:managers-cdk:{VERSION}",
     f"io.github.egonw.bacting:managers-biojava:{VERSION}",
     f"io.github.egonw.bacting:managers-bridgedb:{VERSION}",
-    f"io.github.egonw.bacting:bacting-core:{VERSION}",
 )
 config.endpoints.extend(endpoints)
 
