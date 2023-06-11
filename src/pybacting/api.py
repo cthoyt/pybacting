@@ -8,18 +8,23 @@ __all__ = [
     "biojava",
     "bridgedb",
     "cdk",
+    "doi",
+    "duckduckgo",
     "excel",
     "inchi",
     "opsin",
     "oscar",
     "pubchem",
+    "pubmed",
     "qudt",
     "rdf",
+    "wikidata",
     "xml",
+    "zenodo",
 ]
 
 WORKSPACE = "."
-VERSION = "0.3.1"
+VERSION = "0.3.3"
 
 # The ones marked with "no" can't be loaded because they are POM-only
 # artifacts. See the excellent explanation given by @ctrueden why at:
@@ -28,8 +33,10 @@ endpoints = (
     # f"io.github.egonw.bacting:managers-semweb:{VERSION}", # no
     f"io.github.egonw.bacting:bacting-core:{VERSION}",
     f"io.github.egonw.bacting:managers-cdk:{VERSION}",
+    f"io.github.egonw.bacting:net.bioclipse.managers.duckduckgo:{VERSION}",
     f"io.github.egonw.bacting:managers-inchi:{VERSION}",
     f"io.github.egonw.bacting:managers-pubchem:{VERSION}",
+    f"io.github.egonw.bacting:net.bioclipse.managers.pubmed:{VERSION}",
     f"io.github.egonw.bacting:managers-xml:{VERSION}",
     f"io.github.egonw.bacting:managers-rdf:{VERSION}",
     # f"io.github.egonw.bacting:managers-bioinfo:{VERSION}", # no
@@ -40,6 +47,9 @@ endpoints = (
     f"io.github.egonw.bacting:managers-opsin:{VERSION}",
     f"io.github.egonw.bacting:managers-biojava:{VERSION}",
     f"io.github.egonw.bacting:managers-bridgedb:{VERSION}",
+    f"io.github.egonw.bacting:net.bioclipse.managers.wikidata:{VERSION}",
+    f"io.github.egonw.bacting:net.bioclipse.managers.doi:{VERSION}",
+    f"io.github.egonw.bacting:managers-zenodo:{VERSION}",
 )
 config.endpoints.extend(endpoints)
 
@@ -101,3 +111,23 @@ biojava = biojava_cls(WORKSPACE)
 qudt_cls = jimport("net.bioclipse.managers.QUDTManager")
 qudt = qudt_cls(WORKSPACE)
 """The quantity conversion manager from Bacting."""
+
+pubmed_cls = jimport("net.bioclipse.managers.PubmedManager")
+pubmed = pubmed_cls(WORKSPACE)
+"""The Pubmed manager from Bacting."""
+
+wikidata_cls = jimport("net.bioclipse.managers.WikidataManager")
+wikidata = wikidata_cls(WORKSPACE)
+"""The Wikidata manager from Bacting."""
+
+doi_cls = jimport("net.bioclipse.managers.DOIManager")
+doi = doi_cls(WORKSPACE)
+"""The Digital Object Identifier manager from Bacting."""
+
+zenodo_cls = jimport("net.bioclipse.managers.ZenodoManager")
+zenodo = zenodo_cls(WORKSPACE)
+"""The Zenodo manager from Bacting."""
+
+duckduckgo_cls = jimport("net.bioclipse.managers.DuckDuckGoManager")
+duckduckgo = duckduckgo_cls(WORKSPACE)
+"""The DuckDuckGo manager from Bacting."""
