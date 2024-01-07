@@ -2,6 +2,9 @@ name: Tests
 
 on: [ push, pull_request ]
 
+env:
+  JAVA_HOME: '/usr/lib/jvm/java-17-openjdk-amd64/'
+
 jobs:
   lint:
     name: Lint
