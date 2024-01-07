@@ -43,7 +43,7 @@ if parsed_version.group('release'):
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #
-# needs_sphinx = '1.0'
+needs_sphinx = '7.3'
 
 # If true, the current module name will be prepended to all description
 # unit titles (such as .. function::).
